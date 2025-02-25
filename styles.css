@@ -55,6 +55,9 @@ header p {
 
 .download-buttons a {
   display: inline-block;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  pointer-events: none; /* Make the buttons unclickable */
 }
 
 .download-buttons img {
@@ -68,7 +71,7 @@ header p {
 
 .availability-note {
   font-size: 1em;
-  color: #888;
+  color: #fb8200;
 }
 
 footer p {
@@ -117,10 +120,6 @@ footer p {
     font-size: 1em; /* Adjust the font size for smaller screens */
   }
 
-  .download-buttons img {
-    width: 120px; /* Adjust the button size for smaller screens */
-  }
-
   .logo {
     max-width: 250px; /* Adjust the logo size for tablets */
   }
@@ -147,10 +146,6 @@ footer p {
   .download-buttons {
     flex-direction: column; /* Stack the buttons vertically on mobile devices */
     gap: 10px; /* Reduce the gap between buttons */
-  }
-
-  .download-buttons img {
-    width: 100px; /* Adjust the button size for mobile screens */
   }
 
   .logo {
